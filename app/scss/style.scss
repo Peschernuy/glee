@@ -39,6 +39,8 @@
   }
   &__list-link{
     color: #436372;
+    font-size: 15px;
+    line-height: 12px;
 
   }
 }
@@ -105,6 +107,150 @@
     right: 24px;
   }
 }
+
+
+
+
+footer{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.footer-top{
+  color: #7b7b7b;
+  padding: 78px 0 74px;
+  border-bottom: 1px solid #dae4e9;
+  display: flex;
+  justify-content: space-between;
+
+
+
+
+  &__contact{
+    width: 200px;
+    margin-right: 100px;
+  }
+  &__nav{
+    margin-right: 180px;
+  }
+  &__nav-2{
+    margin-right: 200px;
+  }
+  &__logo{
+    margin-bottom: 32px;
+ 
+  }
+  &__news{
+    max-width: 270px;
+  }
+  &__title{
+    color: #1f2044;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+    font-size: 16px;
+    line-height: 21px;
+    @extend %dmsans-700;
+    padding-top: 20px;
+  }
+  &__link,
+  &__tel,
+  &__mail{
+    @extend %rubik-400;
+    color: #7b7b7b;
+    font-size: 14px;
+    line-height: 32px;
+    margin-bottom: 18px;
+    
+  }
+  &__adress,
+  &__text{
+     @extend %rubik-400;
+    color: #7b7b7b;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  &__text{
+    margin-bottom: 35px;
+  }
+   &__adress{
+     display: block;
+     margin-bottom: 18px;
+   }
+   &__mail{
+     display: block;
+  }
+  &__form-input{
+  background-color: #fef7f0 ;
+  max-width: 170px;
+  width: 100%;
+  border: none;
+  padding: 14px 10px 14px 15px;
+  &::placeholder{
+    color: #234969;
+    @extend %dmsans-400;
+    font-size: 12px;
+    line-height: 21px;
+  }
+
+  }
+  &__form-btn{
+    color: #ffffff;
+    border: none;
+    background-color: #234969;
+     @extend %dmsans-400;
+     font-size: 14px;
+     line-height: 21px;
+     padding: 13px 14px;
+     cursor: pointer;
+  }
+}
+
+.footer-bottom{
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__copy{
+    @extend %rubik-400;
+    color: #7b7b7b;
+    font-size: 14px;
+    line-height: 32px;
+  }
+  &__list{
+    display: flex;
+    
+   
+  }
+  &__link{
+    @extend %rubik-400;
+    color: #7b7b7b;
+    font-size: 14px;
+    line-height: 32px;
+    padding: 2px 15px;
+    border-right: solid 1px #7b7b7b;
+  }
+  &__item{
+ 
+    
+  }
+  &__link-contact{
+    border: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
