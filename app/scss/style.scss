@@ -183,7 +183,35 @@
 
 
 
+.info{
+  padding: 50px 150px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fef7f0;
+  &__item{
+ display: flex;
+ align-items: center;
+  }
+  &__item-icon{
+  margin-bottom: 30px;
+  max-width: 55px;
+  margin-right: 25px;
+  }
+  &__item-inner{
 
+  }
+  &__item-title{
+    @extend %dmsans-700;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  &__item-text{
+    @extend %dmsans-400;
+    font-size: 16px;
+    line-height: 30px;
+    max-width: 210px;
+  }
+}
 
 
 
