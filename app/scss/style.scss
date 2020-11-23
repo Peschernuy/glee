@@ -189,16 +189,13 @@
   justify-content: space-between;
   background-color: #fef7f0;
   &__item{
- display: flex;
- align-items: center;
+  display: flex;
+  align-items: center;
   }
   &__item-icon{
   margin-bottom: 30px;
   max-width: 55px;
   margin-right: 25px;
-  }
-  &__item-inner{
-
   }
   &__item-title{
     @extend %dmsans-700;
@@ -215,6 +212,52 @@
 
 
 
+.product{
+  padding: 75px 0 85px;
+  &__title{
+    text-align: center;
+    font-size: 36px;
+    @extend %dmsans-700;
+    margin-bottom: 35px;
+  }
+  &__menu{
+  margin-bottom: 80px;
+  }
+  &__menu-list{
+    display: flex;
+    justify-content: center;
+   padding: 0 30px;
+   
+  }
+  &__menu-item {
+      padding: 0 15px;
+    
+  }
+  &__menu-link{
+    @extend %dmsans-700;
+    font-size: 16px;
+    color: #8b8b8b;
+  }
+  &__menu-link:hover{
+    color: #000000;
+    transition: all .5s;
+  }
+}
+
+
+
+
+.product-item{
+  &__img-box{
+    width: 270px;
+    height: 380px;
+    background-color: #fff;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  }
+  &__images{
+ 
+  }
+}
 
 
 
@@ -363,10 +406,6 @@ footer{
     line-height: 32px;
     padding: 2px 15px;
     border-right: solid 1px #7b7b7b;
-  }
-  &__item{
- 
-    
   }
   &__link-contact{
     border: none;
