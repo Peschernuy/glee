@@ -144,15 +144,24 @@
      margin-bottom: 45px;
   }
   &__btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 60px;
     background-color: #a3bbc8;
     color: #fff;
     @extend %rubik-400;
     font-size: 18px;
     line-height: 30px;
-    
     padding: 25px ;
 
   }
+  &__link{
+     color: #fff;
+  }
+  
+
   .slick-dots{
     display: flex;
     justify-content: center;
@@ -214,6 +223,7 @@
 
 .product{
   padding: 75px 0 85px;
+  margin-bottom: 200px;
   &__items{
     display: grid;
     grid-template-columns: repeat(4, 270px);
@@ -321,22 +331,79 @@
     font-size: 16px;
     line-height: 40px;
     color: #243f4d;
+   
   }
   &__price{
     @extend %dmsans-700;
     font-size: 16px;
     line-height: 40px;
     color: #a3bbc8;
+     margin-bottom: 20px;
   }
-  &__inner{
-    
-  }
+  
 }
 
 
 
+.lamps{
+
+&-items{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+&-item__text{
+  max-width: 340px;
+}
+
+&-item{
+  padding: 90px 135px 100px 390px;
+  background-color: #feefe2;
+  position: relative;
+}
+&-item__image{
+  position: absolute;
+    left: 15%;
+    top: -20%;
+}
+&-item__title{
+  max-width: 265px;
+  @extend %dmsans-700;
+  font-size: 26px;
+  line-height: 32px;
+  color: #243f4d;
+  margin-bottom: 30px;
+}
+&-item__text{
+  @extend %dmsans-400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #243f4d;
+  margin-bottom: 35px;
+}
+&-item__btn{
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 25px 20px;
+  width: 180px;
+  border: 1px solid #b3b7b5;
+  border-radius: 5px;
+}
+
+&-item__link{
+  @extend %rubik-500;
+  font-size: 15px;
+  line-height: 12px;
+  color: #436372;
+
+}
 
 
+}
 
 
 
