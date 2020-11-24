@@ -214,6 +214,12 @@
 
 .product{
   padding: 75px 0 85px;
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    justify-content: center;
+    grid-gap: 45px 30px;
+  }
   &__title{
     text-align: center;
     font-size: 36px;
@@ -237,6 +243,9 @@
     @extend %dmsans-700;
     font-size: 16px;
     color: #8b8b8b;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
   }
   &__menu-link:hover{
     color: #000000;
@@ -248,18 +257,81 @@
 
 
 .product-item{
-  &__img-box{
-    width: 270px;
-    height: 380px;
-    background-color: #fff;
-    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  max-width: 270px;
+  transition: all .3s;
+   background-color: #fff;
+   box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+   text-align: center;
+   &__img-box{
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px 0px;
+    position: relative;
+    overflow: hidden;
+  
   }
+  &__link-box{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 175px;
+    padding-top: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateY(300%);
+    
+  }
+  &__link{
+    background-color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding-top: 12px;
+    padding-left: 3px;
+
+  }
+
+  &__link:hover{
+    background-color: #a3bbc8;
+    transition: all .3s;
+    & path{
+      fill: #fff;
+    }
+  }
+
+  &__svg{
+    width: 25px;
+  }
+
   &__images{
- 
+    object-fit: contain;
+    object-position: center;
+    height: 250px;
+  }
+  &:hover{
+    .product-item__link-box{
+      transform: translateY(0);
+    }
+  }
+  &__name{
+    @extend %dmsans-500;
+    font-size: 16px;
+    line-height: 40px;
+    color: #243f4d;
+  }
+  &__price{
+    @extend %dmsans-700;
+    font-size: 16px;
+    line-height: 40px;
+    color: #a3bbc8;
+  }
+  &__inner{
+    
   }
 }
-
-
 
 
 
@@ -435,5 +507,3 @@ footer{
 
 
 @import 'media';
-
-
