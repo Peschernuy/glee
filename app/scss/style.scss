@@ -346,11 +346,12 @@
 
 
 .lamps{
-
+margin-bottom: 100px;
 &-items{
   display: flex;
   justify-content: space-between;
   gap: 15px;
+
  
 }
 
@@ -405,8 +406,69 @@
 }
 
 
+.design{
 
+  &__title{
+    text-align: center;
+    margin-bottom: 30px;
+    @extend %dmsans-700;
+    font-size: 36px;
+    line-height: normal;
+  }
 
+  &__menu{
+    margin-bottom: 80px;
+  }
+
+  &__menu-list{
+    display: flex;
+    justify-content: center;
+    
+  }
+  &__menu-link{
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    @extend %dmsans-700;
+    font-size: 16px;
+    color: #8b8b8b;
+  }
+  &__menu-link:hover{
+    color: #000000;
+    transition: all .5s;
+  }
+
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    justify-content: center;
+    grid-gap: 35px 30px;
+  }
+  &__item{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 245px;
+    // max-width: 370px;
+    width: 100%;
+  }
+  &__item-inner{
+    padding-top: 40px;
+    padding-left: 37px;
+  }
+
+  &__item-title{
+    max-width: 180px;
+    @extend %dmsans-700;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  &__item-text{
+    @extend %dmsans-700;
+    font-size: 16px;
+    color: #a3bbc8;
+  }
+}
 
 
 
