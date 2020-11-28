@@ -471,6 +471,8 @@ margin-bottom: 100px;
 }
 
 
+
+
 .video{
   height: 500px;
   background-image: url('../images/video-bg.jpg');
@@ -495,8 +497,6 @@ margin-bottom: 100px;
 .blog{
   max-width: 1170px;
   margin: 0 auto;
-
-
     &__inner{
     display: flex;
     justify-content: space-between;
@@ -580,8 +580,9 @@ margin-bottom: 100px;
   }
 
 
-.partners{
 
+
+.partners{
   margin: -170px auto 80px;
   height: 440px;
   background-color: #fef7f0;
@@ -592,12 +593,156 @@ margin-bottom: 100px;
   &__item{
     padding: 0 50px;
   }
- 
 }
-
 ul.partners__list{
   padding-top: 280px;
 }
+
+
+
+
+
+.top{
+  &__header{
+    padding: 35px 0;
+    background-color: #edf1f4;
+    text-align: center;
+    
+  }
+  &__title{
+    @extend %rubik-400;
+    font-size: 36px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+.login{
+  max-width: 475px;
+  width: 100%;
+  margin: 120px auto;
+  &__label{
+    // margin-bottom: 30px;
+    // display: block;
+    @extend %rubik-400;
+    font-size: 14px;
+    color: #436372;
+  }
+  &__input{
+    display: block;
+    width: 100%;
+    height: 60px;
+    border: 2px solid #f6f6f6;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+   
+  }
+  &__btn{
+    display: block;
+    background-color: #a3bbc8;
+    @extend %rubik-500;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    height: 60px;
+    max-width: 475px;
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  &__links{
+    display: flex;
+    justify-content: space-between;
+    @extend %rubik-400;
+    font-size: 14px;
+    color: #436372;
+    border-bottom: 2px solid #f6f6f6;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+  &__error{
+    color: #436372;
+  }
+  &__text{
+    @extend %rubik-400;
+    font-size: 14px;
+    color: #436372;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+  }
+  &__btn-2{
+    display: block;
+    background-color: transparent;
+    @extend %rubik-500;
+    font-size: 18px;
+    border: 2px solid #a3bbc8;
+    height: 60px;
+    max-width: 475px;
+    width: 100%;
+    padding: 16px 0;
+    cursor: pointer;
+    margin-bottom: 120px;
+  }
+  &__link-2{
+    color: #243f4d;
+  }
+}
+
+
+.partners-login{
+  margin: 0 auto 70px;
+  padding: 100px 0;
+  background-color: #fef7f0;
+  &__list-login{
+   display: flex;
+   justify-content:center;
+   align-items: center;   
+   }
+  &__item-login{
+    padding: 0 50px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
