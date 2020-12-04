@@ -7,6 +7,8 @@ $(function(){
     ratedFill: "#ffcc00"
   });
 
+  
+
 
   $('.filter-price__input').ionRangeSlider({
     type: "double",

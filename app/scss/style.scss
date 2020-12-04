@@ -784,7 +784,7 @@ ul.partners__list{
   }
   
   &__from{
-    margin-right: 195px;
+    margin-right: auto;
    
   }
   
@@ -1082,14 +1082,90 @@ footer{
 }
 
 
+.shop-content{
+
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(3, 270px);
+    justify-content: center;
+    grid-gap: 45px 30px;
+
+  }
+}
 
 
+.shop-content2{
+
+  &__item{
+    display: flex;
+    
+  }
+  &__text{
+    max-width: 420px;
+  }
+  &__title{
+    @extend %rubik-400;
+    font-size: 40px;
+    line-height: 27px;
+    color: #333333;
+    margin-bottom: 25px;
+    margin-top: 90px;
+  }
+  &__img{
+    height: 500px;
+    width: 370px;
+    border: 2px solid #f2f2f2;
+    padding: 80px 20px;
+    margin-right: 60px;
+    margin-bottom: 40px;
+    background-color: #fefefe;
+    
+  }
+  &__image{
+    object-fit: contain;
+    object-position: center;
+  }
+  &__star{
+    margin-bottom: 40px;
+  }
+  &__text{
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #243f4d;
+    margin-bottom: 40px;
+  }
+  &__price{
+    display: block;
+    @extend %rubik-400;
+    font-size: 30px;
+    line-height: 45px;
+    color: #333333;
+    margin-bottom: 40px;
+  }
+  &__link{
+    display: inline-block;
+    
+    padding: 14px;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: #ffffff;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    &:hover{
+      background-color: #a2bac7;
+      transition: all .3s;
+      & path{
+      fill: #fff;
+     }
+    }
+  }
+}
 
 
-
-
-
-
+.pagination__2{
+  justify-content: start;
+}
 
 
 

@@ -56,3 +56,43 @@ body{
     }
   }
 }
+
+.pagination{
+ display: flex;
+ justify-content: center; 
+ padding: 110px 0; 
+ align-items: center;
+ &__list{
+  display: flex;
+  
+  
+ }
+ &__item{
+
+ }
+ &__link{
+  padding: 16px 20px;
+   border: 1px solid #a3bbc8;
+   margin-right: 16px;
+   color: #243f4d;
+   @extend %rubik-400;
+  font-size: 16px;
+  line-height: 30px;
+  &:hover{
+    color: #fff;
+    background-color: #a3bbc8;
+  }
+ }
+ &__next{
+  color: #243f4d;
+  @extend %rubik-400;
+  font-size: 16px;
+  line-height: 30px;
+  padding: 11px 20px;
+  border: 1px solid #a3bbc8;
+  &:hover{
+    background-color: #a3bbc8;
+    color: #fff;
+  }
+ }
+}
