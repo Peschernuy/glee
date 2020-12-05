@@ -18,7 +18,7 @@ $(function(){
 
 
 
-
+  $('.select-style').styler();
 
 
   $(".star").rateYo({
