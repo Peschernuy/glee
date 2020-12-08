@@ -1354,13 +1354,95 @@ right: 30px;
 
 
 
+.details-tabs{
+  padding: 100px 0;
+  &__top{
+    text-align: center;
+  }
+  &__top-item{
+    display: inline-block;
+    width: 240px;
+    margin-bottom: 40px;
+    padding: 20px 0;
+    background-color: #edf1f4;
+    border-radius: 5px;
+    @extend %rubik-500;
+    font-size: 18px;
+    color: #243f4d;
+    & + .details-tabs__top-item{
+      margin-left: 15px;
+    }
+  }
+  &__top-item--active{
+    color: #fff;
+    background-color: #a3bbc8;
+  }
+  &__content-item{
+    display: none;
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #243f4d;
 
+    &.details-tabs__content-item--active{
+      display: block;
+    }
+  }
+}
 
+.details-realted{
+  &__items{
+    position: relative;
+    
+  }
 
+  &__title{
+    @extend %rubik-700;
+    font-size: 36px;
+    color: #243f4d;
+    margin-bottom: 80px;
+    display: inline-block;
+  }
+}
 
+button.slick-prev.slick-arrow{
+  position: absolute;
+  top: -130px;
+  right: 60px;
+  background-color: transparent;
+  border: none;
+  background-image: url('../images/icons/arrow-prev.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0;
+  padding: 25px;
+  border: 2px solid #edf1f4;
+  border-radius: 5px;
+  margin-right: 10px;
+  &:hover{
+    border: 2px solid #a3bbc8;
+  }
+}
 
+button.slick-next.slick-arrow{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: -130px;
+  background-color: transparent;
+  border: none;
+  background-image: url('../images/icons/arrow-next.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0;
+  padding: 25px;
+  border: 2px solid #edf1f4;
+  border-radius: 5px;
+  &:hover{
+    border: 2px solid #a3bbc8;
+  }
 
-
+}
 
 
 
