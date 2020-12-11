@@ -1743,6 +1743,55 @@ button.slick-next.slick-arrow{
     display: block;
     
   }
+
+  &__aside{
+    
+  }
+  &__filter-form{
+    display: flex; 
+    max-width: 270px;
+    width: 100%;
+    height: 43px;
+    border: 1px solid #edf1f4;
+    border-radius: 5px;  
+    margin-bottom: 60px;
+  }
+  &__filter-input{
+    border: none;
+  }
+  &__filter-btn{
+    border: none;
+    background-color: #edf1f4;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+  }
+  &__recent-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  &__recent-title{
+    @extend %rubik-400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #333333;
+      margin-bottom: 10px;
+  }
+  &__recent-date{
+    @extend %rubik-400;
+      font-size: 12px;
+      color: #9a9a9a; 
+  }
+  &__recent-box{
+    max-width: 160px;
+  }
+  &__recent-img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+  }
 }
 
 
