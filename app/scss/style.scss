@@ -1713,12 +1713,43 @@ button.slick-next.slick-arrow{
       color: #333;
       margin-bottom: 40px;
     }
+    &-subtitle{
+      @extend %rubik-500;
+      font-size: 16px;
+      line-height: 30px;
+      color: #243f4d;
+      margin-bottom: 30px;
+    }
     &-text{
       @extend %rubik-400;
       font-size: 16px;
       line-height: 30px;
       color: #243f4d;
       margin-bottom: 40px;
+    }
+    &-blockquote{
+      background-color: #edf1f4;
+      border-left: 6px solid #a3bbc8;
+      @extend %rubik-400;
+      font-size: 16px;
+      line-height: 30px;
+      color: #243f4d;
+      padding: 20px 90px 20px 30px;
+      margin-bottom: 45px;
+      position: relative;
+      &-author::before{
+        content: '';
+        position: absolute;
+        background-image: url('../images/blog/blog-author-mark.jpg');
+        width: 20px;
+        height: 4px;
+        top: 93px;
+        left: 30px;
+
+      }
+      &-author{
+        margin-left: 30px;
+      }
     }
     &-link{
       display: flex;
@@ -1744,9 +1775,7 @@ button.slick-next.slick-arrow{
     
   }
 
-  &__aside{
-    
-  }
+ 
   &__filter-form{
     display: flex; 
     max-width: 270px;
@@ -1797,7 +1826,89 @@ button.slick-next.slick-arrow{
 
 
 
+.blog-details{
 
+  &__left{
+    float: left;
+    margin-right: 30px;
+
+  }
+  &__title{
+    @extend %rubik-500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #243f4d;
+    margin-top: 55px;
+    margin-bottom: 30px;
+  }
+  &__text{
+    @extend %rubik-400;
+      font-size: 16px;
+      line-height: 30px;
+      color: #565872;
+      margin-bottom: 50px;
+  }
+
+  &__author{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    border-top: 2px solid #ebebeb;
+    border-bottom: 2px solid #ebebeb;
+    &-box{
+      display: flex;
+    }
+    &-title{
+    @extend %rubik-500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #333333;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    }
+    &-text{
+      @extend %rubik-400;
+      font-size: 16px;
+      line-height: 30px;
+      color: #666666;
+    }
+    &-img{
+      margin-right: 30px;
+    }
+    &-social{
+      
+    }
+    &-tags{
+     @extend %rubik-400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #333333;
+      a{
+        @extend %rubik-400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #999999;
+      }
+    }
+    &-share{
+      display: flex;
+      @extend %rubik-400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #333333;
+      align-items: center;
+      margin-top: 10px;
+      a{
+        margin-left: 20px;
+      }
+    }
+    &-all{
+      margin-left: 25px;
+
+    }
+  }
+  
+}
 
 
 
