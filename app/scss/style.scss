@@ -31,6 +31,7 @@
 
 .menu{
   @extend %rubik-500;
+  padding-left: 100px;
   &__list{
     display: flex;
   }
